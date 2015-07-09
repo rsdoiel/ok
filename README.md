@@ -8,6 +8,8 @@ E.g. they use testing.T rather than explicit calls to log.Fatal() or os.Exit().
 Pseudo go code to illustrate how you might use ok.Ok() and ok.NotOk().
 
 ```go
+    package hello
+
     imports (
         "testing"
         "github.com/rsdoiel/ok"
