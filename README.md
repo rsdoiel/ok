@@ -5,7 +5,7 @@ E.g. they use testing.T rather than explicit calls to log.Fatal() or os.Exit().
 
 ## example usage
 
-This is psuedo code to illustrate out you might use ok.Ok() and ok.NotOk().
+Pseudo go code to illustrate how you might use ok.Ok() and ok.NotOk().
 
 ```go
     imports (
