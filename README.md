@@ -3,6 +3,24 @@
 A small collection of assertion like functions for use with Go's testing package. 
 E.g. they use testing.T rather than explicit calls to log.Fatal() or os.Exit().
 
+## example usage
+
+This is psuedo code to illustrate out you might use ok.Ok() and ok.NotOk().
+
+```go
+    imports (
+        "testing"
+        "github.com/rsdoiel/ok"
+    )
+    
+    // your test code...
+    
+    func TestHello(t *testing.T) {
+        ok.Ok(t, Hello("George") == "Hello George", "Should say Hello George.")
+        ok.NoOk(t, Hello("Fred") == "Hello George", "Should not say Hello George for Fred.")
+    }
+```
+
 ## testing ok
 
 If all goes well you should see output similar to
