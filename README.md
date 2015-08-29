@@ -1,7 +1,6 @@
 # ok
 
-A small collection of assertion like functions for use with Go's testing package. 
-E.g. they use testing.T rather than explicit calls to log.Fatal() or os.Exit().
+A small collection of assertion like functions for use with Go's testing package.  E.g. they use testing.T rather than explicit calls to log.Fatal() or os.Exit().
 
 ## example usage
 
