@@ -1,3 +1,7 @@
+
+[![Go Report Card](http://goreportcard.com/badge/rsdoiel/ok)](http://goreportcard.com/report/rsdoiel/ok)
+[![License](https://img.shields.io/badge/License-BSD%202--Clause-blue.svg)](https://opensource.org/licenses/BSD-2-Clause)
+
 # ok
 
 A small collection of assertion like functions for use with Go's testing package.  E.g. they use testing.T rather than explicit calls to log.Fatal() or os.Exit().
