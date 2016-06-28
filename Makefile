@@ -7,7 +7,7 @@
 # See: http://opensource.org/licenses/BSD-2-Clause
 #
 build:
-	go build
+	go build -o bin/shorthand cmds/shorthand/shorthand.go
 
 lint:
 	gofmt -w ok.go && golint ok.go
@@ -17,6 +17,8 @@ test:
 	go test
 
 install:
-	go install
+	env GOBIN=$(HOME)/bin go install cmds/shorthand/shorthand.go
 
+release:
+	./mk-release.sh
 
